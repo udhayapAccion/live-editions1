@@ -12,10 +12,10 @@ import thunk from 'redux-thunk';
 import reducers from '../store/reducers';
 import { Row, Col } from 'antd';
 import MainMenu from './containers/MainMenu'
-import Header from './containers/Header'
+import Banner from './containers/Banner'
 import Footer from './containers/Footer'
 import Body from './containers/Body'
-import Content from './containers/Content'
+//import Content from './containers/Content'
 
 let store = createStore(reducers, applyMiddleware(thunk));
 
@@ -23,11 +23,11 @@ const MainPage = () => (
     // <Provider store={store}>
     //     <BrowserRouter>
             <div style={{position:'relative'}}>
-                <div  style={{position:'absolute',width:'100%'}}>
+                <div className='shell-bg-container'>
                     <Row >
                         <Col span={24} >
                             <MainMenu />
-                            <Header />
+                            <Banner />
                         </Col>
                     </Row>
                 </div>

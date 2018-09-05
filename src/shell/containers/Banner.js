@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../style.scss'
 import { Row, Col } from 'antd';
-import MarketPlaceHeader from '../../modules/marketplace/components/MarketPlaceHeader'
+import MarketPlaceBanner from '../../modules/marketplace/components/MarketPlaceBanner'
 
-class Header extends Component {
+class Banner extends Component {
     constructor(){
         super();
         this.state = {
@@ -14,11 +14,11 @@ class Header extends Component {
         return(
             <Row>
                 <Col span={24}>
-                    <MarketPlaceHeader />
+                    <MarketPlaceBanner />
                 </Col>
             </Row>
         )
     }
 }
 
-export default Header
+export default Banner

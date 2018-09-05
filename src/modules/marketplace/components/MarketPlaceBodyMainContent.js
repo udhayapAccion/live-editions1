@@ -1,19 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../style.scss'
 import { Row, Col, Input } from 'antd';
+import { Button } from 'antd';
 
-const MarketPlaceBodyMainContent = () => (
-    <div>
-        <Row type='flex' justify='center'>
-            <Col span={24} >
-                <div style={{textAlign:'center', border:'1px solid', height:'500px', paddingTop:'20px', paddingBottom:'20px', backgroundColor:'#FFFFFF'}}>
-                    <span style={{fontSize:24, fontWeight:600, lineHeight:2}}>Explore your Future</span><br/>
-                    <span style={{fontSize:16, fontWeight:300, lineHeight:2}}>Select category to help navigate your career options</span><br/>
-                    <span style={{height:'400px'}} />
+class MarketPlaceBodyMainContent extends Component {
+    constructor(state) {
+        super(state);
+        this.state = {
+            items: [
+                { title: "Career Pathways", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.' },
+                { title: "HS/ROP Programs", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.' },
+                { title: "Create Career Plan", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.' }
+            ]
+        }
+    }
+
+    render() {
+        return (
+            <div className="future-component">
+                <div className="_ttl-bar">
+                    <div className="_ttl">Explore Your Future</div>
+                    <div className="_sub-ttl">Select a category to help navigate your career options.</div>
+                    <div className="divider-x primary" style={{ width: '10%', marginTop: '11px' }}></div>
                 </div>
-            </Col>
-        </Row>
-    </div>
-)
+                <div className="_body">
+                    <Row gutter={24} >
+                        {this.state.items.map((item, index) =>
+                            <Col xs={24} sm={12} lg={8} key={index} >
+                                <div className="_item">
+                                    <div className="_avtr"></div>
+                                    <div className="_ttl">{item.title}</div>
+                                    <div className="_sub-ttl">{item.subtext}</div>
+                                    <Button type="primary" className="_action">EXPLORE</Button>
+                                </div>
+                            </Col>
+                        )}
+                    </Row>
+                </div>
+            </div>
+        );
+    }
+}
 
 export default MarketPlaceBodyMainContent;
