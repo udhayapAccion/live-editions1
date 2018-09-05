@@ -173,3 +173,36 @@ body {
 .hamburger span:nth-child(3) {
     top: 26px;
 }
+
+// Footer styles
+
+.le-footer-top-container
+{
+    color:#fff;
+    background-color: #202020;
+}
+.le-footer-bottom-container
+{
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    background-color: #181818;
+}
+.le-footer-content{
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.le-footer-content-head
+{
+    font-size: 18px;
+}
+.le-footer-company-info
+{
+    text-align: center;
+}
