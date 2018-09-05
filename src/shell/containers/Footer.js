@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../style.scss'
 import { Row, Col } from 'antd';
-import MarketPlaceFooter from '../../modules/marketplace/components/MarketPlaceFooter'
+import MarketPlaceHomeFooter from '../../modules/marketplace/home/components/HomeFooter'
 
 class Footer extends Component {
     constructor(){
@@ -14,7 +14,7 @@ class Footer extends Component {
         return(
             <Row>
                 <Col span={24}>
-                    <MarketPlaceFooter />
+                    <MarketPlaceHomeFooter />
                 </Col>
             </Row>
         )

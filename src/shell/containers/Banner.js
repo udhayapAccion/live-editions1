@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../style.scss'
 import { Row, Col } from 'antd';
-import MarketPlaceBanner from '../../modules/marketplace/components/MarketPlaceBanner'
+import MarketPlaceHomeBanner from '../../modules/marketplace/home/components/HomeBanner'
 
 class Banner extends Component {
     constructor(){
@@ -14,7 +14,7 @@ class Banner extends Component {
         return(
             <Row>
                 <Col span={24}>
-                    <MarketPlaceBanner />
+                    <MarketPlaceHomeBanner />
                 </Col>
             </Row>
         )

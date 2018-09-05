@@ -1,8 +1,8 @@
 import React from 'react';
-import '../style.scss'
+import '../../style.scss'
 import { Row, Col, Input } from 'antd';
 
-const MarketPlaceBodyTopContent = () => (
+const HomeBodyTopContent = () => (
     <div>
         <Row type='flex' justify='center'>
             <Col span={24} >
@@ -17,4 +17,4 @@ const MarketPlaceBodyTopContent = () => (
     </div>
 )
 
-export default MarketPlaceBodyTopContent;
+export default HomeBodyTopContent;

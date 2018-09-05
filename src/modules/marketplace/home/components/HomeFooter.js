@@ -1,8 +1,8 @@
 import React from 'react';
-import '../style.scss'
+import '../../style.scss'
 import { Row, Col } from 'antd';
 
-const MarketPlaceFooter = () => (
+const HomeFooter = () => (
     <div>
         <Row>
             <Col span={24} >
@@ -13,4 +13,4 @@ const MarketPlaceFooter = () => (
     </div>
 )
 
-export default MarketPlaceFooter;
+export default HomeFooter;

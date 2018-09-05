@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../style.scss'
+import '../../style.scss'
 import { Row, Col, Input } from 'antd';
 import { Button } from 'antd';
 
-class MarketPlaceBodyMainContent extends Component {
+class HomeBodyMainContent extends Component {
     constructor(state) {
         super(state);
         this.state = {
@@ -42,4 +42,4 @@ class MarketPlaceBodyMainContent extends Component {
     }
 }
 
-export default MarketPlaceBodyMainContent;
+export default HomeBodyMainContent;
