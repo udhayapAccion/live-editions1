@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import './../style.scss'
+import "./../sass/MainMenu.css"
 import { Row, Col } from 'antd';
 import { Button } from 'antd'
 import logo from './../../assets/logo.png'

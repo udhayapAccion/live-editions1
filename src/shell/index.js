@@ -12,7 +12,6 @@ import thunk from 'redux-thunk';
 import reducers from '../store/reducers';
 import { Row, Col } from 'antd';
 import MainMenu from './containers/MainMenu'
-import Banner from './containers/Banner'
 import Footer from './containers/Footer'
 import Body from './containers/Body'
 //import Content from './containers/Content'
@@ -22,24 +21,32 @@ let store = createStore(reducers, applyMiddleware(thunk));
 const MainPage = () => (
     // <Provider store={store}>
     //     <BrowserRouter>
-            <div style={{position:'relative'}}>
-                <div className='shell-bg-container'>
-                    <Row >
-                        <Col span={24} >
-                            <MainMenu />
-                            <Banner />
-                        </Col>
-                    </Row>
+            <div className="app-layout">
+                <MainMenu />
+                <div className="app-content">
+                  <Body />
                 </div>
-                <div style={{position:'absolute',width:'100%', top:'70px'}}>
-                    <Row >
-                        <Col span={24} >
-                            <Body />
-                            <Footer />
-                        </Col>
-                    </Row>
-                </div>
-            </div>
+                <Footer/>
+              </div>
+
+            // <div style={{position:'relative'}}>
+            //     <div className='shell-bg-container'>
+            //         <Row >
+            //             <Col span={24} >
+            //                 <MainMenu />
+            //                 <Banner />
+            //             </Col>
+            //         </Row>
+            //     </div>
+            //     <div style={{position:'absolute',width:'100%', top:'70px'}}>
+            //         <Row >
+            //             <Col span={24} >
+            //                 <Body />
+            //                 <Footer />
+            //             </Col>
+            //         </Row>
+            //     </div>
+            // </div>
     //     </BrowserRouter>
     // </Provider>
 );

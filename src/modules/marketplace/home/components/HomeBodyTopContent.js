@@ -1,20 +1,20 @@
 import React from 'react';
-import '../../style.scss'
+import './../sass/HomeBodyTopContent.css'
 import { Row, Col, Input } from 'antd';
 
 const HomeBodyTopContent = () => (
-    <div>
-        <Row type='flex' justify='center'>
+        <Row type='flex' justify='center' className="home-body-top-content">
             <Col span={24} >
-                <div style={{textAlign:'center', paddingTop:'50px', paddingBottom:'50px', backgroundColor:'none'}}>
-                    <span style={{fontSize:36, fontWeight:600, lineHeight:2, color: 'white'}}>Follow your path to Success!</span><br/>
-                    <span style={{fontSize:26, fontWeight:600, lineHeight:2, color: 'white'}}>Career Education Pathways to Economic and Career Mobility</span><br/>
-                    <span style={{fontSize:26, fontWeight:400, lineHeight:2, color: 'white'}}>Providing Career Pathways from K-12 and Adult Education to the Workforce</span><br/><br/>
-                    <Input style={{height:'50px', width:'650px'}} placeholder='What do you want to learn today? What is your dream job?'></Input>
+                <div className="_body">
+                    <div className="_title">Follow your path to Success!</div>
+                    <div className="_sub-title">Career Education Pathways to Economic and Career Mobility</div>
+                    <div className="_sub-title-1">Providing Career Pathways from K-12 and Adult Education to the Workforce</div>
+                    <div className="_search">
+                        <Input className="_input" placeholder='What do you want to learn today? What is your dream job?'></Input>
+                    </div>
                 </div>
             </Col>
         </Row>
-    </div>
 )
 
 export default HomeBodyTopContent;

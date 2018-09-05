@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../style.scss'
 import { Row, Col } from 'antd';
 import MarketPlaceHomeBody from '../../modules/marketplace/home/components/HomeBody'
+import Banner from './Banner'
 
 class Body extends Component {
     constructor(){
@@ -12,11 +13,9 @@ class Body extends Component {
     }
     render(){
         return(
-            <Row>
-                <Col span={24}>
-                    <MarketPlaceHomeBody />
-                </Col>
-            </Row>
+            <div className="app-container">
+              <MarketPlaceHomeBody/>
+            </div>
         )
     }
 }
