@@ -48,7 +48,6 @@ class Footer extends Component {
                          <label>www.liveditions.com</label>
                         </div>
                     </Col>
-
                 </Row>
         )
     }

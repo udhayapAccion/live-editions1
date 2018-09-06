@@ -4,6 +4,8 @@
 	height: $app-header-height
 	background-color: $app-header-bg-color
 	display: flex
+	box-shadow: 1px 1px 16px 3px #d9d9d985
+	border-bottom: 1px solid #d9d9d96b
 	&>.h-left
 		&>.h-logo
 			display: flex
@@ -33,7 +35,7 @@
 				&:before
 					content: ""
 					position: absolute
-					bottom: 0
+					bottom: -1px
 					left: 0
 					width: 100%
 					min-height: 4px
@@ -58,7 +60,7 @@
 			height: auto
 			flex-direction: column
 			align-items: flex-start
-			box-shadow: 1px 1px 9px 6px #d9d9d9
+			border-bottom: 1px solid #d9d9d9
 			&>.h-left
 				height: $app-header-height
 				&>.hamburger

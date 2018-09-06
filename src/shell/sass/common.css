@@ -25,3 +25,6 @@
   background-color: #000; }
   .divider-x.primary {
     background-color: #f8b500; }
+
+.anim-slide-up {
+  animation: SlideUp 0.45s ease-in-out; }

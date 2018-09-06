@@ -5,7 +5,7 @@ import { Row, Col, Input } from 'antd';
 const HomeBodyTopContent = () => (
         <Row type='flex' justify='center' className="home-body-top-content">
             <Col span={24} >
-                <div className="_body">
+                <div className="_body anim-slide-up">
                     <div className="_title">Follow your path to Success!</div>
                     <div className="_sub-title">Career Education Pathways to Economic and Career Mobility</div>
                     <div className="_sub-title-1">Providing Career Pathways from K-12 and Adult Education to the Workforce</div>

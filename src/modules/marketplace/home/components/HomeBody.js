@@ -11,7 +11,7 @@ const HomeBody = () => (
 	<Row type="flex" className="app-main" justify="center">
 		<Banner />
 		<HomeBodyTopContent />
-	    <Col md={20} className='app-main-box'>
+	    <Col sm={22} md={20} className='app-main-box'>
 	    	<HomeBodyMainContent />        
 	    </Col>
 	    <HomeBodyBottomContent />

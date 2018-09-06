@@ -51,6 +51,17 @@
   .divider-x.primary {
     background-color: #f8b500; }
 
+.anim-slide-up {
+  animation: SlideUp 0.45s ease-in-out; }
+
+@keyframes SlideUp {
+  from {
+    transform: translateY(15px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 body {
   overflow-x: hidden;
   font-family: 'Source Sans Pro', sans-serif; }

@@ -1,7 +1,9 @@
 .app-header {
   height: 62px;
   background-color: #fff;
-  display: flex; }
+  display: flex;
+  box-shadow: 1px 1px 16px 3px #d9d9d985;
+  border-bottom: 1px solid #d9d9d96b; }
   .app-header > .h-left > .h-logo {
     display: flex;
     align-items: center;
@@ -30,7 +32,7 @@
         .app-header > .h-left > .h-item.active:before, .app-header > .h-right > .h-item.active:before {
           content: "";
           position: absolute;
-          bottom: 0;
+          bottom: -1px;
           left: 0;
           width: 100%;
           min-height: 4px;
@@ -54,7 +56,7 @@
       height: auto;
       flex-direction: column;
       align-items: flex-start;
-      box-shadow: 1px 1px 9px 6px #d9d9d9; }
+      border-bottom: 1px solid #d9d9d9; }
       .app-header.menu-active > .h-left {
         height: 62px; }
         .app-header.menu-active > .h-left > .hamburger span:nth-child(1) {
