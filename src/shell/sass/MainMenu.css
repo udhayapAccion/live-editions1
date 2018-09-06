@@ -25,7 +25,11 @@
       margin: 0 27px;
       font-size: 18px;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #4f4a46; }
+      .app-header > .h-left > .h-item > a, .app-header > .h-right > .h-item > a {
+        text-decoration: none;
+        color: #4f4a46; }
       .app-header > .h-left > .h-item.active, .app-header > .h-right > .h-item.active {
         font-weight: 600;
         cursor: default; }
@@ -92,11 +96,3 @@
               min-width: 100%;
               min-height: 1px;
               max-height: 1px; } }
-.le-mainmenu-link
-{
-  color:rgba(0,0,0, 0.65);
-}
-.le-mainmenu-link:active
-{
-  color:#f8b500;
-}

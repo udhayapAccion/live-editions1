@@ -44,9 +44,7 @@ class MainMenu extends Component {
                     <div className="h-item">For Partners</div>
                 </div> */}
                 <div className="h-right">
-
                     <div className="h-item active">
-
                         <Link className="le-mainmenu-link" to="/marketplace">Marketplace</Link>
                     </div>
                     <div className="h-item">
