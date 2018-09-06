@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import "./../sass/MainMenu.css"
 import { Row, Col } from 'antd';
 import { Button } from 'antd'
@@ -33,7 +34,7 @@ class MainMenu extends Component {
                         <span />
                     </div>
                 </div>
-                <div className="h-right">
+                {/* <div className="h-right">
                     <div className="h-item active">Marketplace</div>
                     <div className="h-item">Study Groups</div>
                     <div className="h-item">Workforce</div>
@@ -41,7 +42,26 @@ class MainMenu extends Component {
                     <div className="h-item"><Button type="primary">Get Started</Button></div>
                     <div className="h-item h-divider"><div></div></div>
                     <div className="h-item">For Partners</div>
+                </div> */}
+                <div className="h-right">
+
+                    <div className="h-item active">
+
+                        <Link className="le-mainmenu-link" to="/marketplace">Marketplace</Link>
+                    </div>
+                    <div className="h-item">
+                        <Link className="le-mainmenu-link" to="/studygroups">Study Groups</Link>
+                    </div>
+                    <div className="h-item">
+                        <Link className="le-mainmenu-link" to="/workforce">Workforce</Link>
+                    </div>
+                    <div className="h-item">Sign In</div>
+                    <div className="h-item"><Button type="primary">Get Started</Button></div>
+                    <div className="h-item h-divider"><div></div></div>
+                    <div className="h-item">For Partners</div>
+
                 </div>
+
             </div>
         );
     }

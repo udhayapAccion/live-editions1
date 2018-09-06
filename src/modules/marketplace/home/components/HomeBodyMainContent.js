@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import '../sass/HomeBodyMainContent.css'
 import { Row, Col, Input } from 'antd';
 import { Button } from 'antd';
+import { Link } from "react-router-dom";
 
 class HomeBodyMainContent extends Component {
     constructor(state) {
         super(state);
         this.state = {
             items: [
-                { title: "Career Pathways", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.' },
-                { title: "HS/ROP Programs", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.' },
-                { title: "Create Career Plan", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.' }
+                { title: "Career Pathways", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/careerpathway' },
+                { title: "HS/ROP Programs", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/' },
+                { title: "Create Career Plan", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/' }
             ]
         }
     }
@@ -31,7 +32,7 @@ class HomeBodyMainContent extends Component {
                                     <div className="_avtr"></div>
                                     <div className="_ttl">{item.title}</div>
                                     <div className="_sub-ttl">{item.subtext}</div>
-                                    <Button type="primary" className="_action">EXPLORE</Button>
+                                    <Button type="primary" className="_action"><Link to={item.link}>EXPLORE</Link></Button>
                                 </div>
                             </Col>
                         )}

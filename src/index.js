@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import MainPage from "../src/shell";
-
-ReactDOM.render(<MainPage/>, document.getElementById("root"));
+import { BrowserRouter } from 'react-router-dom'
+ReactDOM.render(<BrowserRouter>
+    <MainPage />
+</BrowserRouter>, document.getElementById("root"));
 

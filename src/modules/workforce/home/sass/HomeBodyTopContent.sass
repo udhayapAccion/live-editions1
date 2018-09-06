@@ -1,0 +1,50 @@
+@import './../../../../shell/sass/util/mixins.sass'
+.home-body-top-content
+	height: 504px
+	align-items: center
+	position: relative
+	+media-only-mobile
+		height: auto
+		padding: 21px
+	& ._body
+		&>._title
+			margin-top: 100px
+			font-size: 44px
+			font-weight: 600
+			line-height: 1.02
+			letter-spacing: -0.3px
+			text-align: center
+			color: #fffdfd
+			+media-only-mobile
+				font-size: 27px
+		&>._sub-title
+			font-size: 28px
+			line-height: 1.61
+			letter-spacing: -0.2px
+			color: #fffdfd
+			margin-top: 25px
+			text-align: center
+			+media-only-mobile
+				font-size: 15px
+		&>._sub-title-1
+			font-size: 24px
+			line-height: 1.88
+			letter-spacing: -0.2px
+			color: #fffdfd
+			text-align: center
+			font-weight: 300
+			+media-only-mobile
+				font-size: 15px
+		&>._search
+			margin-top: 39px
+			text-align: center
+			&>._input
+				height: 60px
+				font-size: 18px
+				font-weight: 300
+				border-radius: 10px
+				box-shadow: 0 2px 14px 3px rgba(0, 0, 0, 0.36)
+				+media-only-mobile
+					max-width: 80%
+					height: 40px
+

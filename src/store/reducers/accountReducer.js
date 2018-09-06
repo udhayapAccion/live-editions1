@@ -4,12 +4,12 @@ const initialState = {
     result: {},
 }
 
-export default function getAccount(state = initialState, action) {
+export default function getInfo(state = initialState, action) {
     switch (action.type) {
         case ACCOUNT:
             return {
                 ...state,
-                account: action.account
+                info: action.info
             };
 
         default:
