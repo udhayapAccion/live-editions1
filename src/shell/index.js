@@ -21,6 +21,7 @@ let store = createStore(reducers, applyMiddleware(thunk));
 const MainPage = () => (
 
   <Provider store={store}>
+  
     <div className="app-layout">
       <MainMenu />
       <div className="app-content">
