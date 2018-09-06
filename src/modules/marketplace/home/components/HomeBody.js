@@ -9,7 +9,7 @@ import HomeFooter from './HomeFooter'
 
 const HomeBody = () => (
 	<Row type="flex" className="app-main" justify="center">
-		<Banner />
+		<Banner type="marketplacehome"/>
 		<HomeBodyTopContent />
 	    <Col sm={22} md={20} className='app-main-box'>
 	    	<HomeBodyMainContent />        
