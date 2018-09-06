@@ -1,23 +1,22 @@
 import { ACCOUNT } from "../../constants";
 import Service from "../../services/common";
 
-export function getAccount(user) {
+export function getInfo(user) {
     return (dispatch) => {
-        Service.getAccount(user).then((response) => response.json())
+        Service.getInfo(user).then((response) => response.json())
             .then((responseJson) => {
-                dispatch(accountDetails(responseJson))
+                dispatch(getInformation(responseJson))
             }
             )
             .catch(error =>{
-                dispatch(accountDetails("response")) 
+                dispatch(getInformation({title:"Error"})) 
             })
     };
 }
 
-export function accountDetails(account) {
-    alert("sdg");
-    return {
+export function getInformation(info) {
+       return {
         type: ACCOUNT,
-        account: {name:"udhaya"}
+        info: info
     }
 }

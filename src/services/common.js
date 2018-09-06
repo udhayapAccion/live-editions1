@@ -1,19 +1,11 @@
 import { ENVIRONMENT } from '../environments';
 
-const getAccount = (user) => {
-        return fetch(ENVIRONMENT.API_URL, {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(user),
-  
-      });
+const getInfo = (user) => {
+        return fetch(ENVIRONMENT.API_URL);
 }
 
 export default {
-    getAccount: getAccount,
+  getInfo: getInfo,
   
 };
 

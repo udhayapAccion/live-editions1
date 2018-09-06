@@ -19,36 +19,36 @@ import Body from './containers/Body'
 let store = createStore(reducers, applyMiddleware(thunk));
 
 const MainPage = () => (
-    // <Provider store={store}>
-    //     <BrowserRouter>
-            <div className="app-layout">
-                <MainMenu />
-                <div className="app-content">
-                  <Body />
-                </div>
-                <Footer/>
-              </div>
 
-            // <div style={{position:'relative'}}>
-            //     <div className='shell-bg-container'>
-            //         <Row >
-            //             <Col span={24} >
-            //                 <MainMenu />
-            //                 <Banner />
-            //             </Col>
-            //         </Row>
-            //     </div>
-            //     <div style={{position:'absolute',width:'100%', top:'70px'}}>
-            //         <Row >
-            //             <Col span={24} >
-            //                 <Body />
-            //                 <Footer />
-            //             </Col>
-            //         </Row>
-            //     </div>
-            // </div>
-    //     </BrowserRouter>
-    // </Provider>
+  <Provider store={store}>
+    <div className="app-layout">
+      <MainMenu />
+      <div className="app-content">
+        <Body />
+      </div>
+      <Footer />
+    </div>
+  </Provider>
+
+  // <div style={{position:'relative'}}>
+  //     <div className='shell-bg-container'>
+  //         <Row >
+  //             <Col span={24} >
+  //                 <MainMenu />
+  //                 <Banner />
+  //             </Col>
+  //         </Row>
+  //     </div>
+  //     <div style={{position:'absolute',width:'100%', top:'70px'}}>
+  //         <Row >
+  //             <Col span={24} >
+  //                 <Body />
+  //                 <Footer />
+  //             </Col>
+  //         </Row>
+  //     </div>
+  // </div>
+
 );
 
 export default MainPage;
