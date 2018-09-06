@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../style.scss'
+import '../sass/HomeBodyMainContent.css'
 import { Row, Col, Input } from 'antd';
 import { Button } from 'antd';
 

@@ -12,7 +12,7 @@ class Banner extends Component {
     }
     render(){
         return(
-            <Row>
+            <Row className="app-banner full-vh">
                 <Col span={24}>
                     <MarketPlaceHomeBanner />
                 </Col>

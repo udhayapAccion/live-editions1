@@ -1,0 +1,24 @@
+.app-layout {
+  overflow-x: hidden; }
+  .app-layout > .app-header {
+    position: fixed;
+    width: 100%;
+    z-index: 44;
+    top: 0;
+    left: 0; }
+  .app-layout > .app-content {
+    margin-top: 62px;
+    background-color: #fafafa; }
+    .app-layout > .app-content > .app-container .app-banner {
+      min-height: 400px;
+      width: 100%;
+      position: absolute; }
+      .app-layout > .app-content > .app-container .app-banner.full-vh {
+        top: 62px;
+        height: calc(100vh - 62px); }
+    .app-layout > .app-content > .app-container > .app-main {
+      margin-top: -89px; }
+      .app-layout > .app-content > .app-container > .app-main > .app-main-box {
+        background-color: #fff;
+        position: relative;
+        box-shadow: 0 24px 32px -7px rgba(0, 0, 0, 0.07); }
