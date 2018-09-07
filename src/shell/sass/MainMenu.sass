@@ -25,11 +25,23 @@
 			align-items: center
 			height: 100%
 			justify-content: center
-			margin: 0 27px
+			margin: 0 21px
 			font-size: 18px
 			position: relative
 			cursor: pointer
 			color: #4f4a46
+			&:before
+				position: absolute
+				bottom: -1px
+				left: 0
+				width: 100%
+				min-height: 4px
+				background-color: $primary
+			+media-only-desktop
+				&:hover:not(.active):not(.no-hover)
+					&:before
+						content: ""
+						animation: HeaderItemHoverAnim 0.234s ease-in-out
 			&>a
 				text-decoration: none
 				color: #4f4a46
@@ -38,12 +50,6 @@
 				cursor: default
 				&:before
 					content: ""
-					position: absolute
-					bottom: -1px
-					left: 0
-					width: 100%
-					min-height: 4px
-					background-color: $primary
 			&.h-divider
 				margin: 0 7px
 				&>div

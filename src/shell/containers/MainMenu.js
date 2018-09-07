@@ -54,7 +54,7 @@ class MainMenu extends Component {
                         <Link className="le-mainmenu-link" to="/workforce">Workforce</Link>
                     </div>
                     <div className="h-item">Sign In</div>
-                    <div className="h-item"><Button type="primary">Get Started</Button></div>
+                    <div className="h-item no-hover"><Button type="primary">Get Started</Button></div>
                     <div className="h-item h-divider"><div></div></div>
                     <div className="h-item">For Partners</div>
 

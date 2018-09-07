@@ -5,3 +5,9 @@
   to {
     transform: translateY(0px);
     opacity: 1; } }
+
+@keyframes HeaderItemHoverAnim {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(1); } }

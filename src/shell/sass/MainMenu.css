@@ -22,11 +22,22 @@
       align-items: center;
       height: 100%;
       justify-content: center;
-      margin: 0 27px;
+      margin: 0 21px;
       font-size: 18px;
       position: relative;
       cursor: pointer;
       color: #4f4a46; }
+      .app-header > .h-left > .h-item:before, .app-header > .h-right > .h-item:before {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        min-height: 4px;
+        background-color: #f8b500; }
+      @media screen and (min-width: 769px) {
+        .app-header > .h-left > .h-item:hover:not(.active):not(.no-hover):before, .app-header > .h-right > .h-item:hover:not(.active):not(.no-hover):before {
+          content: "";
+          animation: HeaderItemHoverAnim 0.234s ease-in-out; } }
       .app-header > .h-left > .h-item > a, .app-header > .h-right > .h-item > a {
         text-decoration: none;
         color: #4f4a46; }
@@ -34,13 +45,7 @@
         font-weight: 600;
         cursor: default; }
         .app-header > .h-left > .h-item.active:before, .app-header > .h-right > .h-item.active:before {
-          content: "";
-          position: absolute;
-          bottom: -1px;
-          left: 0;
-          width: 100%;
-          min-height: 4px;
-          background-color: #f8b500; }
+          content: ""; }
       .app-header > .h-left > .h-item.h-divider, .app-header > .h-right > .h-item.h-divider {
         margin: 0 7px; }
         .app-header > .h-left > .h-item.h-divider > div, .app-header > .h-right > .h-item.h-divider > div {
