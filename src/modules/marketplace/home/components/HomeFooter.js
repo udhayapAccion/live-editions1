@@ -15,21 +15,27 @@ const HomeFooter = () => (
 	        Why Stargate?
 	      </Col>
 	      <Col xs={24} md={6} className="_stat_item">
-	        <div className="_avtar"><span/></div>
+	        <div className="_avtar">
+	        	<img src={require(`../../../../assets/icons/shield/shield.png`)} />
+	        </div>
 	        <div className="_body">
 	          <div className="_title">20,000+ STUDENTS</div>
 	          <div className="_sub-text">Lorem Ipsum is simply dummy text of the printing</div>
 	        </div>
 	      </Col>
 	      <Col xs={24} md={6} className="_stat_item">
-	        <div className="_avtar"><span/></div>
+	        <div className="_avtar">
+				<img src={require(`../../../../assets/icons/award/award.png`)} />
+	        </div>
 	        <div className="_body">
 	          <div className="_title">AWARD WINNING</div>
 	          <div className="_sub-text">Lorem Ipsum is simply dummy text of the printing</div>
 	        </div>
 	      </Col>
 	      <Col xs={24} md={6} className="_stat_item">
-	        <div className="_avtar"><span/></div>
+	        <div className="_avtar">
+				<img src={require(`../../../../assets/icons/credit-card/credit-card.png`)} />
+	        </div>
 	        <div className="_body">
 	          <div className="_title">SECURITY PAYMENT</div>
 	          <div className="_sub-text">Lorem Ipsum is simply dummy text of the printing</div>

@@ -63,6 +63,26 @@
     transform: translateY(0px);
     opacity: 1; } }
 
+.flex {
+  display: flex; }
+
+.inline-flex {
+  display: inline-flex; }
+
+.flex-align-center {
+  align-items: center; }
+
+.flex-justify-center {
+  justify-content: center; }
+
+.flex-center {
+  align-items: center;
+  justify-content: center; }
+
+.ant-btn-primary {
+  background-color: #f8b500;
+  border-color: #f8b500; }
+
 body {
   overflow-x: hidden;
   font-family: 'Source Sans Pro', sans-serif; }

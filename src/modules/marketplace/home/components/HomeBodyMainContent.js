@@ -9,16 +9,16 @@ class HomeBodyMainContent extends Component {
         super(state);
         this.state = {
             items: [
-                { title: "Career Pathways", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/careerpathway' },
-                { title: "HS/ROP Programs", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/' },
-                { title: "Create Career Plan", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/' }
+                { title: "Career Pathways", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/careerpathway', icon: require(`./../../../../assets/icons/career/career-1.png`) },
+                { title: "HS/ROP Programs", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/', icon: require('../../../../assets/icons/online-education/online-education.png')},
+                { title: "Create Career Plan", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/', icon: require('../../../../assets/icons/hand/hand.png') }
             ]
         }
     }
 
     render() {
         return (
-            <div className="future-component">
+            <div className="HomeBodyMainContent">
                 <div className="_ttl-bar">
                     <div className="_ttl">Explore Your Future</div>
                     <div className="_sub-ttl">Select a category to help navigate your career options.</div>
@@ -29,7 +29,9 @@ class HomeBodyMainContent extends Component {
                         {this.state.items.map((item, index) =>
                             <Col xs={24} sm={12} lg={8} key={index} >
                                 <div className="_item">
-                                    <div className="_avtr"></div>
+                                    <div className="_avtr">
+                                        <img src={item.icon} />
+                                    </div>
                                     <div className="_ttl">{item.title}</div>
                                     <div className="_sub-ttl">{item.subtext}</div>
                                     <Button type="primary" className="_action"><Link to={item.link}>EXPLORE</Link></Button>
