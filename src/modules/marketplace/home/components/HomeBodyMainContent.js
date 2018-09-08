@@ -9,7 +9,7 @@ class HomeBodyMainContent extends Component {
         super(state);
         this.state = {
             items: [
-                { title: "Career Pathways", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/careerpathway', icon: require(`./../../../../assets/icons/career/career-1.png`) },
+                { title: "Career Pathways", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/marketplace/careerpathway', icon: require(`./../../../../assets/icons/career/career-1.png`) },
                 { title: "HS/ROP Programs", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/', icon: require('../../../../assets/icons/online-education/online-education.png')},
                 { title: "Create Career Plan", subtext: 'Agriculture is the cultivation of land and breeding of animals and plants to provide products to sustain and enhance life.', link: '/', icon: require('../../../../assets/icons/hand/hand.png') }
             ]

@@ -13,7 +13,8 @@
     .app-layout > .app-content > .app-container .app-banner {
       min-height: 400px;
       width: 100%;
-      position: absolute; }
+      position: absolute;
+      top: 62px; }
       .app-layout > .app-content > .app-container .app-banner.full-vh {
         top: 62px;
         height: calc(100vh - 62px); }

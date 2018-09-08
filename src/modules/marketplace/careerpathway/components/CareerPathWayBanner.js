@@ -6,7 +6,7 @@ const CareerPathWayBanner = () => (
         <Row>
             <Col span={24} >
                 {/* <div style={{height:'450px', backgroundColor:'#912444'}} /> */}
-                <img style={{height: '100%', minHeight:'450px', width:'100%'}} src={require(`../../../../assets/maketplace-home-banner.png`)} />
+                <img style={{height: '100%', minHeight:'360px', width:'100%'}} src={require(`./../../../../assets/marketplace-home-bottom-quote-bg.png`)} />
             </Col> 
         </Row>
     </div>

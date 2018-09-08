@@ -8,7 +8,6 @@ import CareerPathWayMainContent from './CareerPathWayBodyMainContent';
 
 const CareerPathWayBody = () => (
 	<Row type="flex" className="app-main" justify="center">
-		<Banner type='marketplacehomecareerpath'/>
 		<CareerPathWayTopContent />
 		<Col sm={22} md={20} className='app-main-box' style={{marginBottom: '90px'}}>
 	    	<CareerPathWayMainContent />        

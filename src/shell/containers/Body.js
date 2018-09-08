@@ -17,12 +17,13 @@ class Body extends Component {
     render() {
         return (
             <div className="app-container">
+                <Banner />
                 <Switch>
                     <Redirect exact from='/' to='/marketplace' />
                     <Route exact path='/marketplace' component={MarketPlaceHomeBody} />
                     <Route path='/studygroups' component={StudyGroupHome} />
                     <Route path='/workforce' component={WorkForceHome} />
-                    <Route path='/careerpathway' component={MarketPlaceCareerPathWayBody} />
+                    <Route path='/marketplace/careerpathway' component={MarketPlaceCareerPathWayBody} />
                 </Switch>
             </div>
         )

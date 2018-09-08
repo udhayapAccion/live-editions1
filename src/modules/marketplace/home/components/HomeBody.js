@@ -6,10 +6,10 @@ import HomeBodyTopContent from './HomeBodyTopContent';
 import HomeBodyBottomContent from './HomeBodyBottomContent';
 import HomeBodyMainContent from './HomeBodyMainContent';
 import HomeFooter from './HomeFooter'
+import HomeBanner from './HomeBanner'
 
 const HomeBody = () => (
 	<Row type="flex" className="app-main" justify="center">
-		<Banner type="marketplacehome"/>
 		<HomeBodyTopContent />
 	    <Col sm={22} md={20} className='app-main-box'>
 	    	<HomeBodyMainContent />        
